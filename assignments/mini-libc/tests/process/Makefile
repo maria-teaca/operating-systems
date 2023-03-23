@@ -1,6 +1,6 @@
 LIBC_PATH ?= ../../../libc
 CPPFLAGS = -nostdinc -I. -I$(LIBC_PATH)/include
-CFLAGS = -Wall -Wextra -fno-PIC -fno-stack-protector -fno-builtin
+CFLAGS = -Wall -Wextra -fno-PIC -fno-stack-protector -fno-builtin -g
 LDFLAGS = -nostdlib -no-pie -L$(LIBC_PATH)
 LDLIBS = -lc
 

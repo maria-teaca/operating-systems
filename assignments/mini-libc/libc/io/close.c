@@ -8,5 +8,6 @@
 int close(int fd)
 {
 	/* TODO: Implement lseek(). */
-	return -1;
+
+	return syscall(3, fd);
 }

@@ -1,6 +1,6 @@
 NASM = nasm
 CPPFLAGS = -nostdinc -Iinclude
-CFLAGS = -Wall -Wextra -fno-PIC -fno-stack-protector -fno-builtin
+CFLAGS = -Wall -Wextra -fno-PIC -fno-stack-protector -fno-builtin -g
 
 .PHONY: all clean
 

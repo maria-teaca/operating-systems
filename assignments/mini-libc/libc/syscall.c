@@ -17,5 +17,6 @@ long syscall(long num, ...)
 	f = va_arg(valist, long);
 	va_end(valist);
 
-	return __syscall(num, a, b, c, d, e, f);
+	long ret = __syscall(num, a, b, c, d, e, f);
+	return ret;
 }
